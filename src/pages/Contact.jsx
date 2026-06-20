@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { projects } from '../data/projects';
 
 function Contact() {
   return (
@@ -35,42 +36,40 @@ function Contact() {
         {/* Right Side: Card Fan */}
         <div className="hidden lg:block relative w-[450px] h-[400px]">
           {/* Card 3 (Bottom) */}
-          <div className="absolute top-12 right-0 w-[300px] h-[340px] bg-white rounded-2xl shadow-xl border border-gray-100 p-4 transform rotate-12 translate-x-12 opacity-80 transition-all duration-500 hover:rotate-6 hover:translate-x-16 hover:-translate-y-4">
-            <div className="w-full h-40 bg-gray-100 rounded-xl mb-4 overflow-hidden">
-               <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600" alt="Project 3" className="w-full h-full object-cover opacity-60" />
+          {projects[2] && (
+          <div className="absolute top-12 right-0 w-[300px] h-[340px] bg-linetera-navy rounded-3xl shadow-xl overflow-hidden transform rotate-12 translate-x-12 opacity-80 transition-all duration-500 hover:rotate-6 hover:translate-x-16 hover:-translate-y-4 group cursor-pointer border border-white/10">
+            {projects[2].image && <img src={projects[2].image} alt={projects[2].title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />}
+            <div className="absolute inset-0 bg-gradient-to-t from-gray-900/95 via-gray-900/40 to-transparent opacity-90 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div className="relative z-10 p-6 h-full flex flex-col justify-end translate-y-4 group-hover:-translate-y-2 transition-transform duration-500">
+              <p className="text-[10px] uppercase tracking-widest font-bold text-linetera-orange mb-1">{projects[2].subtitle}</p>
+              <h3 className="text-xl font-bold tracking-tight text-white leading-snug">{projects[2].title}</h3>
             </div>
-            <h3 className="font-bold text-linetera-navy text-lg mb-1">Dashboard Analytics</h3>
-            <p className="text-xs text-gray-500">Finance Sector</p>
           </div>
+          )}
 
           {/* Card 2 (Middle) */}
-          <div className="absolute top-6 right-8 w-[300px] h-[340px] bg-white rounded-2xl shadow-2xl border border-gray-100 p-4 transform rotate-6 translate-x-6 z-10 opacity-90 transition-all duration-500 hover:rotate-3 hover:translate-x-8 hover:-translate-y-4">
-            <div className="w-full h-40 bg-gray-100 rounded-xl mb-4 overflow-hidden">
-               <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&q=80&w=600" alt="Project 2" className="w-full h-full object-cover opacity-80" />
+          {projects[1] && (
+          <div className="absolute top-6 right-8 w-[300px] h-[340px] bg-linetera-navy rounded-3xl shadow-2xl overflow-hidden transform rotate-6 translate-x-6 z-10 opacity-90 transition-all duration-500 hover:rotate-3 hover:translate-x-8 hover:-translate-y-4 group cursor-pointer border border-white/10">
+            {projects[1].image && <img src={projects[1].image} alt={projects[1].title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />}
+            <div className="absolute inset-0 bg-gradient-to-t from-gray-900/95 via-gray-900/40 to-transparent opacity-90 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div className="relative z-10 p-6 h-full flex flex-col justify-end translate-y-4 group-hover:-translate-y-2 transition-transform duration-500">
+              <p className="text-[10px] uppercase tracking-widest font-bold text-linetera-orange mb-1">{projects[1].subtitle}</p>
+              <h3 className="text-xl font-bold tracking-tight text-white leading-snug">{projects[1].title}</h3>
             </div>
-            <h3 className="font-bold text-linetera-navy text-lg mb-1">E-Commerce App</h3>
-            <p className="text-xs text-gray-500">Retail & Lifestyle</p>
           </div>
+          )}
 
           {/* Card 1 (Top) */}
-          <div className="absolute top-0 right-16 w-[300px] h-[340px] bg-white rounded-2xl shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)] border border-gray-100 p-4 transform -rotate-2 z-20 transition-all duration-500 hover:rotate-0 hover:-translate-y-6 cursor-pointer">
-            <div className="w-full h-40 bg-gray-100 rounded-xl mb-4 overflow-hidden relative group">
-               <div className="absolute inset-0 bg-linetera-navy/20 group-hover:bg-transparent transition-colors z-10"></div>
-               <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600" alt="Project 1" className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
+          {projects[0] && (
+          <div className="absolute top-0 right-16 w-[300px] h-[340px] bg-linetera-navy rounded-3xl shadow-[0_20px_40px_-15px_rgba(0,0,0,0.3)] overflow-hidden transform -rotate-2 z-20 transition-all duration-500 hover:rotate-0 hover:-translate-y-6 group cursor-pointer border border-white/20">
+            {projects[0].image && <img src={projects[0].image} alt={projects[0].title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />}
+            <div className="absolute inset-0 bg-gradient-to-t from-gray-900/95 via-gray-900/40 to-transparent opacity-90 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div className="relative z-10 p-6 h-full flex flex-col justify-end translate-y-4 group-hover:-translate-y-2 transition-transform duration-500">
+              <p className="text-[10px] uppercase tracking-widest font-bold text-linetera-orange mb-1">{projects[0].subtitle}</p>
+              <h3 className="text-xl font-bold tracking-tight text-white leading-snug">{projects[0].title}</h3>
             </div>
-            <div className="flex justify-between items-start mb-2">
-              <div>
-                <h3 className="font-bold text-linetera-navy text-lg leading-tight">Smart Monitoring</h3>
-                <p className="text-xs text-linetera-orange font-medium mt-1">IoT Solutions</p>
-              </div>
-              <div className="w-8 h-8 rounded-full bg-linetera-orange/10 flex items-center justify-center text-linetera-orange">
-                <ArrowRight className="w-4 h-4 -rotate-45" />
-              </div>
-            </div>
-            <p className="text-sm text-gray-500 mt-3 leading-relaxed line-clamp-2">
-              Sistem monitoring real-time untuk mendeteksi anomali.
-            </p>
           </div>
+          )}
         </div>
 
       </div>
