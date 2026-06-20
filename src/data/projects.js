@@ -26,5 +26,13 @@ export const projects = [
     subtitle: 'Landing Page for Tutoring Services',
     tags: ['React', 'Tailwind CSS', 'Web'],
     link: '#'
+  },
+  {
+    id: 5,
+    title: 'CareShoe',
+    subtitle: 'Integrated Shoe Laundry Management System',
+    description: 'Platform berbasis web end-to-end yang dirancang untuk mendigitalisasi operasional bisnis cuci sepatu. Memadukan antarmuka mobile-friendly untuk pemesanan & tracking real-time, dengan dasbor admin komprehensif untuk manajemen alur kerja dan pendapatan.',
+    tags: ['React.js', 'PHP', 'MySQL', 'UI/UX'],
+    link: '#'
   }
 ];
