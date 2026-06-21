@@ -1,8 +1,14 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 
 function About() {
   return (
-    <main className="px-8 md:px-16 lg:px-24 pt-40 pb-32 max-w-[1440px] mx-auto w-full flex-1 min-h-screen animate-fade-in">
+    <>
+      <Helmet>
+        <title>About | lineteralabs</title>
+        <meta name="description" content="Learn more about lineteralabs, an independent digital laboratory serving as a home for projects, experiments, and technology-driven creations." />
+      </Helmet>
+      <main className="px-8 md:px-16 lg:px-24 pt-40 pb-32 max-w-[1440px] mx-auto w-full flex-1 min-h-screen animate-fade-in">
       <div className="max-w-3xl">
         <h2 className="text-sm uppercase tracking-widest font-semibold text-linetera-navy/40 mb-12">Profile</h2>
 
@@ -27,6 +33,7 @@ function About() {
         </div>
       </div>
     </main>
+    </>
   );
 }
 

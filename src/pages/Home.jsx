@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -21,6 +22,10 @@ function Home() {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
+      <Helmet>
+        <title>Home | lineteralabs</title>
+        <meta name="description" content="Welcome to the personal portfolio of lineteralabs. A tiny gleam for a giant leap." />
+      </Helmet>
       {/* Interactive Spotlight Glow */}
       <div 
         className="pointer-events-none absolute inset-0 z-0 transition-opacity duration-500 ease-in-out"

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { projects } from '../data/projects';
 import { X, ArrowRight } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 function Portfolio() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -25,6 +26,10 @@ function Portfolio() {
 
   return (
     <>
+      <Helmet>
+        <title>Portfolio | lineteralabs</title>
+        <meta name="description" content="Explore the selected works and projects created by lineteralabs." />
+      </Helmet>
       <section className="w-full flex-1 animate-fade-in flex flex-col">
         {/* 1px Horizontal Line Divider */}
         <div className="w-full h-[1px] bg-linetera-navy/20"></div>

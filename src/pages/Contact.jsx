@@ -1,10 +1,16 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { projects } from '../data/projects';
+import { Helmet } from 'react-helmet-async';
 
 function Contact() {
   return (
-    <main className="px-8 md:px-16 lg:px-24 pt-40 pb-32 max-w-[1440px] mx-auto w-full flex-1 min-h-screen flex flex-col justify-center animate-fade-in">
+    <>
+      <Helmet>
+        <title>Contact | lineteralabs</title>
+        <meta name="description" content="Get in touch with lineteralabs to initiate a project. Contact us via email or find our location." />
+      </Helmet>
+      <main className="px-8 md:px-16 lg:px-24 pt-40 pb-32 max-w-[1440px] mx-auto w-full flex-1 min-h-screen flex flex-col justify-center animate-fade-in">
       <div className="flex flex-col lg:flex-row justify-between items-center gap-16 w-full">
         
         {/* Left Side: Contact Info */}
@@ -74,6 +80,7 @@ function Contact() {
 
       </div>
     </main>
+    </>
   );
 }
 
