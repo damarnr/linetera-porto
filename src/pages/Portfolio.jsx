@@ -6,14 +6,12 @@ import { Helmet } from 'react-helmet-async';
 function Portfolio() {
   const [selectedProject, setSelectedProject] = useState(null);
 
-  // Close modal on escape key
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === 'Escape') setSelectedProject(null);
     };
     if (selectedProject) {
       window.addEventListener('keydown', handleKeyDown);
-      // Prevent scrolling on the body when modal is open
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'auto';
