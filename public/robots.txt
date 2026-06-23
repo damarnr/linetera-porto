@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://lineteralabs.com/sitemap.xml
+Sitemap: https://lineteralabs.vercel.app/sitemap.xml
