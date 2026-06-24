@@ -7,7 +7,10 @@ export const projects = [
     id: 1,
     title: 'SelaData',
     subtitle: 'Real-Time Hydroponic Monitoring & Precision Agriculture System',
-    description: `SelaData adalah platform sistem pemantauan (monitoring) real-time berbasis IoT (Internet of Things) yang dirancang khusus untuk mengoptimalkan budidaya tanaman selada menggunakan metode hidroponik DFT (Deep Flow Technique). Sistem ini mengintegrasikan perangkat keras sensorik dengan aplikasi mobile interaktif untuk mendigitalisasi pemeliharaan pertanian presisi secara akurat. Dengan berfokus pada efisiensi operasional petani modern, SelaData menyajikan visualisasi data kondisi lingkungan secara instan dan menyediakan sistem peringatan dini otomatis (early warning system) untuk mempermudah kontrol kualitas nutrisi serta meminimalkan risiko kegagalan panen tanpa perlu pengecekan manual secara berkala.`,
+    caseStudy: {
+      problem: "Pemantauan hidroponik umumnya dilakukan secara manual secara berkala, memakan waktu, dan sangat rentan terhadap kegagalan panen jika kondisi lingkungan (suhu, pH) tiba-tiba berubah tanpa diketahui oleh petani.",
+      solution: "SelaData dibangun sebagai sistem pemantauan real-time berbasis IoT. Dengan mengintegrasikan perangkat keras sensor dengan aplikasi mobile, sistem ini mendigitalisasi pertanian presisi. Visualisasi data instan dan sistem peringatan dini otomatis (early warning system) memastikan petani dapat mengontrol kualitas nutrisi secara akurat dari mana saja."
+    },
     techDetails: [
       { category: 'Core Programming', value: 'Dart & C++' },
       { category: 'Mobile Interface', value: 'Flutter' },
@@ -24,7 +27,10 @@ export const projects = [
     id: 2,
     title: 'NARU Bimbel',
     subtitle: 'Integrated Landing Page & Conversion System',
-    description: `NARU Bimbel adalah platform landing page berbasis web modern yang dirancang khusus untuk mendigitalisasi strategi pemasaran dan mengoptimalkan konversi pendaftaran siswa baru secara efektif. Aplikasi ini menyajikan profil bimbingan belajar secara interaktif serta dilengkapi dengan fitur carousel testimoni dinamis, yang dipadukan dengan form pendaftaran pintar tiga metode belajar. Sistem ini berfokus pada efisiensi operasional dengan mengotomatisasi alur data calon siswa langsung menuju WhatsApp Admin tanpa memerlukan infrastruktur backend yang rumit.`,
+    caseStudy: {
+      problem: "Lembaga bimbingan belajar seringkali kehilangan potensi pendaftaran siswa baru secara online akibat proses pendaftaran (funnel) yang rumit dan informasi yang tidak terstruktur dengan baik.",
+      solution: "Kami merancang platform landing page interaktif yang mengoptimalkan pemasaran dan konversi. Dilengkapi form pintar untuk memilih tiga metode belajar berbeda, sistem ini mengotomatisasi pengiriman data calon siswa langsung menuju WhatsApp Admin tanpa memerlukan infrastruktur backend (serverless), sehingga menekan biaya operasional."
+    },
     techDetails: [
       { category: 'Core Language', value: 'JavaScript / TypeScript' },
       { category: 'Frontend', value: 'React.js & Vite' },
@@ -41,7 +47,10 @@ export const projects = [
     id: 3,
     title: 'CareShoe',
     subtitle: 'Smart Laundry & Footwear Treatment Management System',
-    description: `CareShoe adalah platform sistem manajemen operasional pencucian dan perawatan sepatu (shoes laundry) berbasis web yang dirancang untuk menyederhanakan alur transaksi, pengelolaan inventaris, dan pelacakan status pengerjaan secara real-time. Sistem ini mengintegrasikan pencatatan pesanan pelanggan mulai dari tahap drop-off, penentuan jenis treatment (seperti deep clean, unyellowing, atau repaint), hingga notifikasi otomatis saat sepatu siap diambil. Dengan fokus pada efisiensi bisnis retail, CareShoe membantu pemilik usaha meminimalkan kesalahan pencatatan manual dan meningkatkan transparansi layanan kepada pelanggan.`,
+    caseStudy: {
+      problem: "Usaha laundry sepatu sering menghadapi kendala operasional dalam pencatatan pesanan manual (nota kertas), pelacakan sepatu yang hilang/tertukar, dan komunikasi status pengerjaan yang lambat kepada pelanggan.",
+      solution: "CareShoe mendigitalisasi seluruh alur transaksi. Aplikasi ini mengelola inventaris mulai dari drop-off, penentuan jenis treatment (deep clean, repaint), hingga pelacakan status pengerjaan secara real-time. Sistem ini juga terintegrasi dengan WhatsApp Gateway untuk mengirimkan notifikasi otomatis saat sepatu selesai dikerjakan, meningkatkan transparansi layanan."
+    },
     techDetails: [
       { category: 'Backend Language', value: 'PHP' },
       { category: 'Frontend Language', value: 'JavaScript' },

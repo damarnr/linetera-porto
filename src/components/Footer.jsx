@@ -16,10 +16,10 @@ function Footer() {
               A tiny gleam for a giant leap.
             </p>
             <p className="text-sm text-gray-300 leading-relaxed font-light max-w-sm">
-              an independent digital laboratory that is home to various projects, experiments, and technological works that I develop.si inovatif dan terstruktur.
+              An independent digital laboratory that is home to various projects, experiments, and technological works.
             </p>
             <p className="text-sm text-gray-400 leading-relaxed font-light max-w-sm mt-4">
-              Berbasis di Yogyakarta, Indonesia. Fokus pada pengembangan sistem informasi, arsitektur data, dan antarmuka web.
+              Based in Yogyakarta, Indonesia. Focused on web, application, and Internet of Things development.
             </p>
           </div>
 

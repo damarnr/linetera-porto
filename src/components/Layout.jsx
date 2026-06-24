@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, Outlet, Link, useLocation } from 'react-router-dom';
 import { Mail, Phone, MapPin, ArrowRight, Menu, X } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 import Footer from './Footer';
 
 function Layout() {
@@ -83,9 +84,18 @@ function Layout() {
       </header>
 
       {/* Main Content Area */}
-      <div className="flex-1 flex flex-col">
-        <Outlet />
-      </div>
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={location.pathname}
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -15 }}
+          transition={{ duration: 0.4, ease: "easeInOut" }}
+          className="flex-1 flex flex-col"
+        >
+          <Outlet />
+        </motion.div>
+      </AnimatePresence>
 
       <Footer />
     </div>

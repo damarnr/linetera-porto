@@ -134,9 +134,26 @@ function Portfolio() {
                   {selectedProject.subtitle}
                 </p>
                 
-                <div className="text-lg text-gray-600 font-light leading-relaxed mb-12 whitespace-pre-line">
-                  {selectedProject.description || "Detailed description for this project is currently being updated. Please check back later or contact us for more information."}
-                </div>
+                {selectedProject.caseStudy ? (
+                  <div className="mb-12 space-y-8">
+                    <div>
+                      <h3 className="text-sm uppercase tracking-widest font-bold text-linetera-navy/40 mb-3">Tantangan (The Problem)</h3>
+                      <p className="text-lg text-gray-600 font-light leading-relaxed whitespace-pre-line">
+                        {selectedProject.caseStudy.problem}
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-sm uppercase tracking-widest font-bold text-linetera-navy/40 mb-3">Solusi (The Solution)</h3>
+                      <p className="text-lg text-gray-600 font-light leading-relaxed whitespace-pre-line">
+                        {selectedProject.caseStudy.solution}
+                      </p>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="text-lg text-gray-600 font-light leading-relaxed mb-12 whitespace-pre-line">
+                    {selectedProject.description || "Detailed description for this project is currently being updated. Please check back later or contact us for more information."}
+                  </div>
+                )}
 
                 {/* Structured Tech Stack Grid */}
                 {selectedProject.techDetails && selectedProject.techDetails.length > 0 && (
