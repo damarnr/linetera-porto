@@ -5,8 +5,14 @@ function About() {
   return (
     <>
       <Helmet>
-        <title>About | lineteralabs</title>
-        <meta name="description" content="Learn more about lineteralabs, an independent digital laboratory serving as a home for projects, experiments, and technology-driven creations." />
+        <title>Profil Studio | LineTera Labs - Pengembang Sistem Informasi</title>
+        <meta name="description" content="Pelajari profil LineTera Labs, studio independen yang berfokus pada rekayasa digital, UI/UX engineering, dan pembuatan website jogja dengan arsitektur data modern." />
+        <meta property="og:title" content="Profil Studio | LineTera Labs - Pengembang Sistem Informasi" />
+        <meta property="og:description" content="Pelajari profil LineTera Labs, studio independen yang berfokus pada rekayasa digital, UI/UX engineering, dan pembuatan website jogja dengan arsitektur data modern." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://lineteralabs.vercel.app/about" />
+        <meta property="og:image" content="https://lineteralabs.vercel.app/lineteralabs icon.png" />
+        <meta property="og:site_name" content="lineteralabs" />
       </Helmet>
       <main className="px-8 md:px-16 lg:px-24 pt-40 pb-32 max-w-[1440px] mx-auto w-full flex-1 min-h-screen animate-fade-in">
       <div className="max-w-3xl">

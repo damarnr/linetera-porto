@@ -7,8 +7,14 @@ function Contact() {
   return (
     <>
       <Helmet>
-        <title>Contact | lineteralabs</title>
-        <meta name="description" content="Get in touch with lineteralabs to initiate a project. Contact us via email or find our location." />
+        <title>Inisiasi Proyek | Konsultasi Rekayasa Digital Bersama LineTera Labs</title>
+        <meta name="description" content="Hubungi LineTera Labs untuk mendiskusikan visi Anda. Kami siap memberikan konsultasi arsitektur data dan merancang sistem informasi yang terstruktur untuk kebutuhan spesifik Anda." />
+        <meta property="og:title" content="Inisiasi Proyek | Konsultasi Rekayasa Digital Bersama LineTera Labs" />
+        <meta property="og:description" content="Hubungi LineTera Labs untuk mendiskusikan visi Anda. Kami siap memberikan konsultasi arsitektur data dan merancang sistem informasi yang terstruktur untuk kebutuhan spesifik Anda." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://lineteralabs.vercel.app/contact" />
+        <meta property="og:image" content="https://lineteralabs.vercel.app/lineteralabs icon.png" />
+        <meta property="og:site_name" content="lineteralabs" />
       </Helmet>
       <main className="px-8 md:px-16 lg:px-24 pt-40 pb-32 max-w-[1440px] mx-auto w-full flex-1 min-h-screen flex flex-col justify-center animate-fade-in">
       <div className="flex flex-col lg:flex-row justify-between items-center gap-16 w-full">

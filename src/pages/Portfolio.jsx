@@ -25,8 +25,14 @@ function Portfolio() {
   return (
     <>
       <Helmet>
-        <title>Portfolio | lineteralabs</title>
-        <meta name="description" content="Explore the selected works and projects created by lineteralabs." />
+        <title>Portofolio Proyek | LineTera Labs Studio Rekayasa Digital</title>
+        <meta name="description" content="Galeri hasil kerja dan studi kasus dari LineTera Labs. Kami merancang dan mengembangkan arsitektur data, aplikasi web, serta sistem informasi manajemen dengan antarmuka presisi." />
+        <meta property="og:title" content="Portofolio Proyek | LineTera Labs Studio Rekayasa Digital" />
+        <meta property="og:description" content="Galeri hasil kerja dan studi kasus dari LineTera Labs. Kami merancang dan mengembangkan arsitektur data, aplikasi web, serta sistem informasi manajemen dengan antarmuka presisi." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://lineteralabs.vercel.app/portfolio" />
+        <meta property="og:image" content="https://lineteralabs.vercel.app/lineteralabs icon.png" />
+        <meta property="og:site_name" content="lineteralabs" />
       </Helmet>
       <section className="w-full flex-1 animate-fade-in flex flex-col">
         {/* 1px Horizontal Line Divider */}
