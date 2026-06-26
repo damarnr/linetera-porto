@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
-import { Helmet } from 'react-helmet-async';
 
 function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -22,17 +21,6 @@ function Home() {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <Helmet>
-        <title>lineteralabs | Rekayasa Digital & Sistem Informasi</title>
-        <meta name="description" content="lineteralabs adalah studio rekayasa digital yang merancang dan membangun website serta sistem informasi manajemen dengan pendekatan yang presisi dan terstruktur. Jelajahi portofolio proyek kami." />
-        <meta name="keywords" content="portofolio web developer, rekayasa digital, arsitektur data, sistem informasi manajemen, UI/UX minimalis, react js portfolio, pembuatan website jogja, pembuatan landing page, website indonesia" />
-        <meta property="og:title" content="lineteralabs | Rekayasa Digital & Sistem Informasi" />
-        <meta property="og:description" content="A tiny gleam for a giant leap. Jelajahi galeri portofolio pengembangan web dan solusi sistem informasi terstruktur." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://lineteralabs.vercel.app/" />
-        <meta property="og:image" content="https://lineteralabs.vercel.app/lineteralabs icon.png" />
-        <meta property="og:site_name" content="lineteralabs" />
-      </Helmet>
       {/* Interactive Spotlight Glow */}
       <div 
         className="pointer-events-none absolute inset-0 z-0 transition-opacity duration-500 ease-in-out"
